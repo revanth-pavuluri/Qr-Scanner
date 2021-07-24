@@ -384,6 +384,7 @@ function generate(){
                 function (canvas) {
                     document.getElementById('preview').appendChild(canvas);
                     var img = canvas.toDataURL();
+			window.open(img);
                 })
         }
     </script>
