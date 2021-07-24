@@ -384,7 +384,13 @@ function generate(){
                 function (canvas) {
                     document.getElementById('preview').appendChild(canvas);
                     var img = canvas.toDataURL();
-			window.open(img);
+		    var link = document.createElement('a');
+        link.download = Qr.png;
+        link.href = img;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        delete link;
                 })
         }
     </script>
