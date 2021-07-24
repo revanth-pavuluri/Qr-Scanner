@@ -258,6 +258,7 @@ function drop(e) {
     oFReader.onload = function (oFR) {
         var logo = document.getElementById('view');
         logo.style["background"] = 'url('+oFR.target.result+')';
+	    alert(oFR.target.result);
         logo.style["background-size"] = 'cover';
         logofile.innerHTML='<img src="'+oFR.target.result+'"> Click here to edit logo';
     };
