@@ -385,7 +385,7 @@ function generate(){
                     document.getElementById('preview').appendChild(canvas);
                     var img = canvas.toDataURL();
 		    var link = document.createElement('a');
-        link.download = Qr.png;
+        link.download = 'Qr.png';
         link.href = img;
         document.body.appendChild(link);
         link.click();
