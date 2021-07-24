@@ -380,7 +380,7 @@ function generate(){
         function takeshot() {
             let div = document.getElementById('card');
   
-            html2canvas(div).then(
+            html2canvas(div,{scale: 2}).then(
                 function (canvas) {
                     document.getElementById('preview').appendChild(canvas);
                     var img = canvas.toDataURL();
